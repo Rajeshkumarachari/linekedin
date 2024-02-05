@@ -135,8 +135,8 @@ const Hero = styled.div`
   h1 {
     padding-bottom: 0;
     width: 55%;
-    font-size: 56px;
-    color: #2977c9;
+    font-size: 46px;
+    color: #b24020;
     font-weight: 200;
     line-height: 70px;
     @media (max-width: 768px) {
