@@ -44,7 +44,14 @@ const Login = () => {
       <Section>
         <Hero>
           <h1>Discover what your network can do for you</h1>
+          <img src="/images/login-hero.svg" alt="reading_logo" />
         </Hero>
+        <Form>
+          <Google>
+            <img src="/images/google.svg" alt="google_logo_login" />
+            Sign in with Google
+          </Google>
+        </Form>
       </Section>
     </Container>
   );
@@ -123,12 +130,88 @@ const Section = styled.section`
   }
 `;
 
+// const Hero = styled.div`
+//   width: 100%;
+//   h1 {
+//     padding-bottom: 0;
+//     width: 50%;
+//     font-size: 46px;
+//     font-weight: 200;
+//     color: #b44627;
+//     line-height: 70px;
+//     @media (max-width: 768px) {
+//       text-align: center;
+//       font-size: 20px;
+//       width: 100%;
+//       line-height: 2;
+//     }
+//     img {
+//       // z-index: -1;
+//       width: 700px;
+//       height: 670px;
+//       position: absolute;
+//       // margin-left: 1100px;
+//       bottom: -2px;
+//       right: -150px;
+//       @media (max-width: 768px) {
+//         top: 230px;
+//         width: initial;
+//         position: initial;
+//         height: initial;
+//       }
+//     }
+//   }
+// `;
 const Hero = styled.div`
   width: 100%;
   h1 {
     padding-bottom: 0;
     width: 55%;
     font-size: 56px;
+    color: #2977c9;
+    font-weight: 200;
+    line-height: 70px;
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 20px;
+      width: 100%;
+      line-height: 2;
+    }
+  }
+
+  img {
+    /* z-index: -1; */
+    width: 700px;
+    height: 670px;
+    position: absolute;
+    bottom: -2px;
+    right: -150px;
+    @media (max-width: 768px) {
+      top: 230px;
+      width: initial;
+      position: initial;
+      height: initial;
+    }
   }
 `;
+const Form = styled.div`
+  margin-top: 100px;
+  width: 408px;
+  @media (max-width: 768px) {
+    margin: 20px;
+  }
+`;
+
+const Google = styled.button`
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
+    inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+`;
+
 export default Login;
