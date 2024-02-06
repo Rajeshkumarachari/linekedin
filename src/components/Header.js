@@ -1,11 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { IoIosSearch } from "react-icons/io";
 import Home from "./Home";
 
 const Header = () => {
   return (
     <Container>
-      <Content> </Content>
+      <Content>
+        <Logo>
+          <a href="/home">
+            <img src="/images/home-logo.svg" alt="" />
+          </a>
+        </Logo>
+        <Search>
+          <div>
+            <input type="text" placeholder="Search" />
+          </div>
+          <SearchIcon>
+            <IoIosSearch />
+          </SearchIcon>
+        </Search>
+      </Content>
 
       <Home />
     </Container>
@@ -22,6 +37,19 @@ const Container = styled.div`
   width: 100vw;
   z-index: 100;
 `;
-const Content = styled.div``;
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 1128px;
+`;
+const Logo = styled.span`
+  margin-right: 8px;
+  font-size: 0px;
+`;
+
+const Search = styled.div``;
+const SearchIcon = styled.div``;
 
 export default Header;
