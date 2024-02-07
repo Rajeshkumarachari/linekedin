@@ -78,8 +78,9 @@ const Header = () => {
           </NavListWrap>
         </Nav>
       </Content>
+      <hr />
 
-      <Home className="w-full" />
+      <Home />
     </Container>
   );
 };
